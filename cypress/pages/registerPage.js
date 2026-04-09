@@ -15,7 +15,7 @@ class registerPage {
 
     OpenURL() {
 
-        cy.visit(Cypress.env("baseURL"));
+        cy.visit(Cypress.env("URL"));
            // Method to open URL of Register Page
     }
     enterFirstName(firstName) {                               // Method to enter First Name, passing Weblocator and value as parameter

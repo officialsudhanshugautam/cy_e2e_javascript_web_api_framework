@@ -1,0 +1,15 @@
+{
+    "login": 
+    {
+        "username": "johndoe@example.com",
+        "password": "password123"
+    },
+    "product": 
+    {
+        "productName": "MacBook"
+    },
+    "message": 
+    {
+        "successMessage": "Success: You have added MacBook to your shopping cart!"
+    }
+}
