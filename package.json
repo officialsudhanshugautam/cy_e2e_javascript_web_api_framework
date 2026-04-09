@@ -1,0 +1,23 @@
+{
+  "name": "cypress-e2e-nehabhasin",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin#readme",
+  "bugs": {
+    "url": "https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin.git"
+  },
+  "license": "ISC",
+  "author": "Sudhanshu Gautam",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.13.1"
+  }
+}
