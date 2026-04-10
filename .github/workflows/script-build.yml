@@ -12,3 +12,10 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
             command: npm run test:addToCard
+
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: Mochawesome HTML Report
+          path: cypress/reports/HTML
+        
