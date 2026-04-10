@@ -12,4 +12,4 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
             browser: firefox
-            command: npm run testaddToCard
+            command: npm run test:addToCard

@@ -11,4 +11,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v7
         with:
-            command: npm run testaddToCard
+            command: npm run test:addToCard
