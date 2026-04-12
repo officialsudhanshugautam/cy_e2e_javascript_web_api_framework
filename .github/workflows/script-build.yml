@@ -22,6 +22,7 @@ jobs:
 
 
       - name: Slack Notification
+        if: always() # Ensure this step runs even if the previous step fails
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
