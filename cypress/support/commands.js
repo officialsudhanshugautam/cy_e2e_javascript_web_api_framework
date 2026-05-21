@@ -24,8 +24,16 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+// command.js addToCartFlo
+// Run test case in headless mode
+// Run test case using script
+// Generate HTML Report - Mochawesome
+
+// Repetitive step as Login so created the common command
 Cypress.Commands.add('login', (email, password) => {
-  cy.visit('');
+
+  cy.visit(''); // it will automatically pick up the URL from cypress config file as baseURL
+  
   cy.get('#input-email').type(email);
   cy.get('#input-password').type(password);
   cy.get('input.btn.btn-primary').click();

@@ -13,7 +13,7 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
-
+  // create the enviornment as key and value, and use in page class
   env: {
     "URL": "https://naveenautomationlabs.com/opencart/index.php?route=account/register"
   },

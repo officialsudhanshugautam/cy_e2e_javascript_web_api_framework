@@ -1,9 +1,13 @@
-class registerPage {         
-    // Class for Register Page and its methods to interact with elements on Register Page, actions to be performed on Register Page
 
+    // create the class
+class registerPage {         
+    // Class for Register Page and its methods to interact with elements on Register Page, 
+    // actions to be performed on Register Page
+
+    // create the object
     weblocators = {
-        // Weblocators for Register Page as Object
-        firstName: '#input-firstname',
+        // inside object, created the weblocators for Register Page as Object
+        firstName: '#input-firstname', // firstname is own created name
         lastName: '#input-lastname',
         email: '#input-email',
         telephone: '#input-telephone',
@@ -13,12 +17,15 @@ class registerPage {
         continueButton: '.btn.btn-primary'
     }
 
+    // create the method and calling URL from cypress config file
     OpenURL() {
 
         cy.visit(Cypress.env("URL"));
            // Method to open URL of Register Page
     }
-    enterFirstName(firstName) {                               // Method to enter First Name, passing Weblocator and value as parameter
+    // create the method, inside method passing the weblocator and passing the parameter as firstName
+    enterFirstName(firstName) { 
+        // Method to enter First Name, passing Weblocator and value as parameter
         cy.get(this.weblocators.firstName).type(firstName)
 
     }
