@@ -1,3 +1,5 @@
+# running for browser specific like firefox
+
 name: Browser Test Build
 on: push
 jobs:
@@ -12,4 +14,4 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
             browser: firefox
-            command: npm run test:addToCard
+            command: npm run test:addToCart

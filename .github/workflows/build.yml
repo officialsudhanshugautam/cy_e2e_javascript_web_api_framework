@@ -1,4 +1,5 @@
 # copied code from github action repo, using yml extension yet another markup langauge
+# using for all available test spec files
 
 name: Regression End-to-end tests
 on: push

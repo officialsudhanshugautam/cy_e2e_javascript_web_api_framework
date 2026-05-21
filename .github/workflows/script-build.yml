@@ -1,3 +1,5 @@
+# Using for running single test spec file
+
 name: Sanity Build
 on: push
 jobs:
