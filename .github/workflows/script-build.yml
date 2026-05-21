@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v7
         with:
-          command: npm run test:addToCard
+          command: npm run test:addToCart
 
       - name: Cypress Test Report
         if: always() # Ensure this step runs even if the previous step fails
