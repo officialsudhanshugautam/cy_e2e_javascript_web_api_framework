@@ -1,4 +1,5 @@
 # two script runs parallely, multiples jobs runs
+# attach mochaawesome report to CICD
 
 name: Parallel Test Build
 on: push
