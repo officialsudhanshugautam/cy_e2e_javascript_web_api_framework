@@ -29,7 +29,7 @@
 // Run test case using script
 // Generate HTML Report - Mochawesome
 
-// Repetitive step as Login so created the common command
+// Repetitive step as "Login" so created the common command
 Cypress.Commands.add('login', (email, password) => {
 
   cy.visit(''); // it will automatically pick up the URL from cypress config file as baseURL

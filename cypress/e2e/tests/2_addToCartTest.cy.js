@@ -1,12 +1,13 @@
-import { homePage } from "../../pages/homePage";
+import { homePage } from "../../pages/2_homePage";
 
 const homePageObj = new homePage()
 
-import testData from "../../fixtures/testData.json"
+import testData from "../../fixtures/2_testData.json"
 
 describe('Add to Cart Test', () => {
 
     // using: before hook step
+    // cy.login from commands.js file along with given parameters values
     before(() => {
         cy.login(testData.login.username, testData.login.password)
 
@@ -14,7 +15,7 @@ describe('Add to Cart Test', () => {
 
     it('Should add a product to the cart and verify the success message', () => {
         
-        // calling page class
+        // calling page class methods
         homePageObj.searchProduct(testData.product.productName)
         homePageObj.addToCart()
 

@@ -1,3 +1,5 @@
+// home page of the website
+
 export class homePage {
 
     weblocators = {

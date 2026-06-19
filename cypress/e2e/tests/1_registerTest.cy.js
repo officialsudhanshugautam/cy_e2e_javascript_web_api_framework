@@ -1,10 +1,10 @@
-import registerPage from '../../pages/registerPage.js';
-// Importing Register Page class from pageObjects folder, using relative path
+import registerPage from '../../pages/1_registerPage.js';
+// importing Register Page class from pageObjects folder, using relative path
 
 const registerObject = new registerPage();
-// Creating object of Register Page class to access its methods in test case
+// Creating object of Register Page class to access its methods in this test case
 
-import registerData from '../../fixtures/registerData.json';
+import registerData from '../../fixtures/1_registerData.json';
 
 describe('Register Test', () => {
     // Describe block for Register Test by Mocha framework, Test suite as Register Page, () called callback function for test steps    
@@ -24,6 +24,7 @@ describe('Register Test', () => {
         
         //cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/register');
 
+        // assertions
         registerObject.enterFirstName(registerData.firstName);
 
         // Calling method to enter First Name, passing value from registerData.json file as parameter
