@@ -1,8 +1,9 @@
-import registerPage from '../../pages/1_registerPage.js';
-// importing Register Page class from pageObjects folder, using relative path
 
-const registerObject = new registerPage();
+// importing Register Page class from pageObjects folder, using relative path
+import registerPage from '../../pages/1_registerPage.js';
+
 // Creating object of Register Page class to access its methods in this test case
+const registerObject = new registerPage();
 
 import registerData from '../../fixtures/1_registerData.json';
 
