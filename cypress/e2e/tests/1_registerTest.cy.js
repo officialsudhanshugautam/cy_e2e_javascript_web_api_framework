@@ -39,3 +39,5 @@ describe('Register Test', () => {
         //registerObject.clickContinueButton();
     });
 });
+
+

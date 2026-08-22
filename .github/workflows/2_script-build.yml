@@ -1,5 +1,6 @@
 # Using for running single test spec file
 # using for Slack notification
+# Using for Mochawesome report on GitHub Actions
 # Slack: first copy available codes from github slack report > create slack account > create channel > channel settings
 # > click integration > click on Add a app > install webhooks > use the same variable > go to GitHub > Settings
 # Click on Secret and variable > add same variable names as mentioned below
