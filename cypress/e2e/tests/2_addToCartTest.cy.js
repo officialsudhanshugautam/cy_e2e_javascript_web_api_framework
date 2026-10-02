@@ -1,4 +1,4 @@
-import { homePage } from "../../pages/2_homePage";
+import { HomePage } from "../../pages/2_homePage";
 
 const homePageObj = new HomePage();
 

@@ -1,4 +1,4 @@
-import registerPage from '../../pages/1_registerPage.js';
+import RegisterPage from '../../pages/1_registerPage.js';
 
 // Creating object of Register Page class to access its methods in this test case file
 const registerPageObject = new RegisterPage();
