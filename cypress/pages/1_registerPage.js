@@ -1,17 +1,11 @@
-
 // Page Object Model : Page Class : All the available locators and actions
-// created the folder of "pages": for creating respective website page, 
-// created the class where will be add locators and actions
+// Created the folder of "pages": for creating respective website page
+// Created the class with locators and actions
+// Registe page of the website 
 
-    // create the class
-export default class registerPage {         
-    // Class for Register Page and its methods to interact with elements on Register Page, 
-    // actions to be performed on Register Page
+export default class RegisterPage {
 
-    // Locators ***********************
-
-    // create the object inside the class to store the locators, 
-    // interms of key and value which called object
+    // init locators 
     weblocators = {
         // inside object, created the weblocators for Register Page as Object
         firstName: '#input-firstname', // firstname is own created name, reference name
@@ -24,17 +18,16 @@ export default class registerPage {
         continueButton: '.btn.btn-primary'
     }
 
-    // calling deafult URL from cypress config file
-    // create the method
+    // Methods/ Functions:
     OpenURL() {
 
         cy.visit(Cypress.env('URL'));
-           // Method to open URL of Register Page
+        // Method to open URL of Register Page
     }
 
     // Actions ***********************
-    // create the method, inside method passing the weblocator and passing the parameter as firstName
-    enterFirstName(firstName) { 
+    // create the method, inside method passing the weblocator and the parameter as firstName
+    enterFirstName(firstName) {
         // Method to enter First Name, passing Weblocator and value as parameter
         cy.get(this.weblocators.firstName).type(firstName)
 
@@ -62,5 +55,3 @@ export default class registerPage {
     }
 
 }
-
-//export default registerPage;

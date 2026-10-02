@@ -1,43 +1,29 @@
-
-// importing Register Page class from pageObjects folder, using relative path
 import registerPage from '../../pages/1_registerPage.js';
 
-// Creating object of Register Page class to access its methods in this test case
-const registerObject = new registerPage();
+// Creating object of Register Page class to access its methods in this test case file
+const registerPageObject = new RegisterPage();
 
 import registerData from '../../fixtures/1_registerData.json';
 
-describe('Register Test', () => {
-    // Describe block for Register Test by Mocha framework, Test suite as Register Page, () called callback function for test steps    
+describe('Register Page Test', () => {
 
-    // beforeEach(() => {
-    //     // Before Each block to execute before each test case, () called callback function for steps to be executed before each test case
-    //     registerObjects.OpenURL();
-    // });
-
-    // *********** this test case following Encapsulation **********
-    // It block for test case, Test case as should register a new user, () called callback function for test steps
     it('should register a new user', () => {
-        
-        // calling page class,  first calling class as registerObject=registePage, than calling method, fixtures data parameter value
 
-        registerObject.OpenURL();
-        
+        registerPageObject.OpenURL();
+
         //cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/register');
 
         // assertions
-        registerObject.enterFirstName(registerData.firstName);
+        registerPageObject.enterFirstName(registerData.firstName);
 
         // Calling method to enter First Name, passing value from registerData.json file as parameter
-
-        registerObject.enterLastName(registerData.lastName);
-        registerObject.enterEmail(registerData.email);
-        registerObject.enterTelephone(registerData.telephone);
-        registerObject.enterPassword(registerData.password);
-        registerObject.enterPasswordConfirm(registerData.passwordConfirm);
-        registerObject.checkPolicyCheckbox();
-        //registerObject.clickContinueButton();
+        registerPageObject.enterLastName(registerData.lastName);
+        registerPageObject.enterEmail(registerData.email);
+        registerPageObject.enterTelephone(registerData.telephone);
+        registerPageObject.enterPassword(registerData.password);
+        registerPageObject.enterPasswordConfirm(registerData.passwordConfirm);
+        registerPageObject.checkPolicyCheckbox();
+        //registerPageObject.clickContinueButton(); //enable it if want to register successfuly
     });
+
 });
-
-

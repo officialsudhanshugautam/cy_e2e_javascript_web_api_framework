@@ -1,7 +1,8 @@
-// home page of the website
+// Home page of the website
 
-export class homePage {
+export class HomePage {
 
+    // init locators:
     weblocators = {
 
         search_input: '.form-control.input-lg',
@@ -11,6 +12,7 @@ export class homePage {
         success_Messaage: 'div.alert.alert-success.alert-dismissible',
     }
 
+    // methods/ functions:
     searchProduct(productName) {
         cy.get(this.weblocators.search_input).type(productName)
         cy.get(this.weblocators.click_search).click()
