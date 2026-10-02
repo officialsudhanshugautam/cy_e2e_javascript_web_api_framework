@@ -41,6 +41,6 @@ jobs:
         env:
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
           SLACK_ICON: https://github.com/rtCamp.png?size=48
-          SLACK_MESSAGE: 'Test Automation Report https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin/actions/runs/${{github.run_id}}'
+          SLACK_MESSAGE: 'Test Automation Report https://github.com/officialsudhanshugautam/Cypress-E2E-Practice/actions/runs/${{github.run_id}}'
           SLACK_TITLE: Cypress Web Test
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
