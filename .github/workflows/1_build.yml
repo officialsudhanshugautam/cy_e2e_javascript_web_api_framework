@@ -2,7 +2,14 @@
 # using for all available test spec files
 
 name: Regression End-to-end tests
-on: push
+on:
+  # schedule:
+  #   - cron: '30 21 * * 1-4' # Mon-Fri 8PM IST
+  # push:
+  #   branches: [main]
+  # pull_request:
+  #   branches: [main]
+  workflow_dispatch: # allows manual run
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
