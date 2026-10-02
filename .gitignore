@@ -1,9 +1,36 @@
-# macOS system files
+
+# cypress
+node_modules/
+/reports/
+/reporting-labs/
+/allure-report/
+/allure-results/
+reporting-labs.history.json
+
+# file to be ignored
+cypress.practising.reference.txt
+
+# env files (confidentials):
+config/.env.*
+!config/.env.example
+
+# build
+dist/
+
+# auth
+src/data/auth.json
+
+#OS files
 .DS_Store
+Thumb.db
 
-# Node.js dependencies
-node_modules/git 
+# IDE
+.vscode/
+.idea/
 
-# Cypress test artifacts
-# cypress/videos/
-# cypress/screenshots/
+# logs
+*.log
+npm-debug.log*
+
+# misc
+*.tgz

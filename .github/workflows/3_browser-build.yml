@@ -1,7 +1,14 @@
 # running for browser specific like firefox
 
 name: Browser Test Build
-on: push
+on:
+  # schedule:
+  #   - cron: '30 21 * * 1-4' # Mon-Fri 8PM IST
+  # push:
+  #   branches: [main]
+  # pull_request:
+  #   branches: [main]
+  workflow_dispatch: # allows manual run
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
