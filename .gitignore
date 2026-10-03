@@ -1,7 +1,7 @@
 
 # cypress
 node_modules/
-reports/
+/reports/
 screenshots/
 reporting-labs/
 allure-report/
@@ -12,8 +12,7 @@ reporting-labs.history.json
 cypress.practising.reference.txt
 
 # env files (confidentials):
-config/.env.*
-!config/.env.example
+.env
 
 # build
 dist/
