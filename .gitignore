@@ -1,10 +1,11 @@
 
 # cypress
 node_modules/
-/reports/
-/reporting-labs/
-/allure-report/
-/allure-results/
+reports/
+screenshots/
+reporting-labs/
+allure-report/
+allure-results/
 reporting-labs.history.json
 
 # file to be ignored

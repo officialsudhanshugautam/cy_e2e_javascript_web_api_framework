@@ -1,6 +1,6 @@
 // Page Object Model : Page Class : All the available locators and actions
 // Created the folder of "pages": for creating respective website page
-// Created the class with locators and actions
+// Created the class for locators and actions
 // Registe page of the website 
 
 export default class RegisterPage {
@@ -19,16 +19,15 @@ export default class RegisterPage {
     }
 
     // Methods/ Functions:
+    // Method to open URL of Register Page
     OpenURL() {
 
         cy.visit(Cypress.env('URL'));
-        // Method to open URL of Register Page
     }
 
     // Actions ***********************
     // create the method, inside method passing the weblocator and the parameter as firstName
     enterFirstName(firstName) {
-        // Method to enter First Name, passing Weblocator and value as parameter
         cy.get(this.weblocators.firstName).type(firstName)
 
     }
