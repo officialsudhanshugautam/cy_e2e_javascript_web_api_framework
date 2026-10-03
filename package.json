@@ -2,13 +2,13 @@
   "name": "cypress_e2e_javascript_web_api_automation_framework",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin#readme",
+  "homepage": "https://github.com/officialsudhanshugautam/cy_e2e_javascript_web_api_framework",
   "bugs": {
-    "url": "https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin/issues"
+    "url": "https://github.com/officialsudhanshugautam/cy_e2e_javascript_web_api_framework"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/officialsudhanshugautam/Cypress-E2E-NehaBhasin.git"
+    "url": "git+https://github.com/officialsudhanshugautam/cy_e2e_javascript_web_api_framework"
   },
   "license": "ISC",
   "author": "Sudhanshu Gautam",

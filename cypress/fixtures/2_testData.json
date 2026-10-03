@@ -1,9 +1,4 @@
 {
-    "login": 
-    {
-        "username": "johndoe@example.com",
-        "password": "password123"
-    },
     "product": 
     {
         "productName": "MacBook"

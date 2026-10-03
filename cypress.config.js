@@ -19,5 +19,8 @@ module.exports = defineConfig({
   env: {
       URL: "https://naveenautomationlabs.com/opencart/index.php?route=account/register",
       apiKey: process.env.CYPRESS_WEATHER_API_TOKEN,
+      Username: process.env.CYPRESS_USERNAME,
+      Password: process.env.CYPRESS_PASSWORD
     },
+    
 });

@@ -7,7 +7,7 @@ import testData from "../../fixtures/2_testData.json"
 describe('Add to Cart Test', () => {
 
     before(() => {
-        cy.login(testData.login.username, testData.login.password)
+        cy.login(Cypress.env('Username'), Cypress.env('Password'));
 
     })
 
