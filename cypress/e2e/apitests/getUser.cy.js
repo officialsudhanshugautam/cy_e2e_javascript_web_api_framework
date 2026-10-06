@@ -2,18 +2,23 @@
 
 describe('GET User API Request', () => {
 
-    let AUTH_TOKEN = {
-        Authorization: 'Bearer bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+    const AUTH_TOKEN = {
+        Authorization: 'Bearer ' + Cypress.env('accessToken')
     };
 
+    const BASE_URL = Cypress.env('goRestApiBaseURL');
+
     let userId;
+    let endPointURL;
 
     //it.only
     it('GET - All Users', () => {
 
+        endPointURL = '/public/v2/users';
+
         cy.request({
             method: 'GET',
-            url: 'https://gorest.co.in/public/v2/users',
+            url: BASE_URL + endPointURL,
             headers: {
                 AUTH_TOKEN
             }
@@ -30,7 +35,7 @@ describe('GET User API Request', () => {
 
             userId = response.body[0].id;
 
-            cy.log('Get User ID: ' +userId);
+            cy.log('Get User ID: ' + userId);
         })
     })
 
@@ -38,9 +43,9 @@ describe('GET User API Request', () => {
 
         cy.request({
             method: 'GET',
-            url: `https://gorest.co.in/public/v2/users/${userId}`,
+            url: BASE_URL + endPointURL +'/' + userId,
             headers: {
-                'authorization': 'Bearer bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+                AUTH_TOKEN
             }
         }).then((response) => {
             expect(response.status).to.equal(200);

@@ -13,7 +13,7 @@ describe('CRUD User API Request', () => {
 
     })
 
-    let token = 'bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+    const accessToken = 'Bearer '+Cypress.env('accessToken');
 
     let randomText = ""
     let testEmail = ""
@@ -36,7 +36,7 @@ describe('CRUD User API Request', () => {
             method: 'POST',
             url: 'https://gorest.co.in/public/v2/users',
             headers: {
-                Authorization: 'Bearer ' + token
+                Authorization: accessToken
             },
             body: postPayload
         }).then((response) => {
@@ -59,7 +59,7 @@ describe('CRUD User API Request', () => {
                 method: 'GET',
                 url: `https://gorest.co.in/public/v2/users/${userId}`,
                 headers: {
-                    'authorization': 'Bearer bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+                    Authorization: accessToken
                 }
             }).then((response) => {
 
@@ -80,7 +80,7 @@ describe('CRUD User API Request', () => {
                     method: 'PUT',
                     url: `https://gorest.co.in/public/v2/users/${userId}`,
                     headers: {
-                        'authorization': 'Bearer bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+                        Authorization: accessToken
                     },
                     body: putPayload
                 }).then((response) => {
@@ -96,7 +96,7 @@ describe('CRUD User API Request', () => {
                 method: 'DELETE',
                 url: `https://gorest.co.in/public/v2/users/${userId}`,
                 headers: {
-                    'authorization': 'Bearer bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+                    Authorization: accessToken
                 }
             }).then((response) => {
 
@@ -109,7 +109,7 @@ describe('CRUD User API Request', () => {
                 method: 'GET',
                 url: `https://gorest.co.in/public/v2/users/${userId}`,
                 headers: {
-                    'authorization': 'Bearer bc5104f9db0fa9d35d48813af15fe91ff06ca8682d3f40c5f2e264c321740063'
+                    Authorization: accessToken
                 },
                 failOnStatusCode: false
             }).then((response) => {
